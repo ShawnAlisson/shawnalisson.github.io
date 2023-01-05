@@ -47,7 +47,7 @@ const Home = () => {
             <Avatar
               boxShadow="lg"
               name="S A"
-              src="/Assets/Memoji.png"
+              src="/assets/Memoji.png"
               size={"2xl"}
             />
             <Box mt="8" display={"flex"} justifyContent="center">
