@@ -1,0 +1,11 @@
+- name: Deploy React to GitHub Pages
+  # You may pin to the exact commit or the version.
+  # uses: bitovi/github-actions-react-to-ghp@1782b3410beca05fb72bd089e5620790c0c4d883
+  uses: bitovi/github-actions-react-to-ghp@v1.2.0
+  with:
+    # Specifies if this action should checkout the code
+    checkout: # optional, default is true
+    # Specifies the path of the static assets after building
+    path: # optional, default is dist
+    # Specifies the command to run after npm ci for the build
+    build_command: # optional, default is npm run build
