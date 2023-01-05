@@ -1,0 +1,60 @@
+{
+    "projects": [
+        {
+            "title": "Portefeuille",
+            "content": "Money and Crypto Management App for iOS & macOS.",
+            "date": "",
+            "website" : "https://portefeuille.ir",
+            "github" : "https://github.com/ShawnAlisson/Portefeuille",
+            "image" : "/assets/portefeuille.png"
+
+        },
+        {
+            "title": "Challenjeu",
+            "content": "",
+            "date": "",
+            "website" : "https://challenjeu.ir",
+            "github" : "",
+            "image" : "/assets/challenjeu.png"
+
+        },
+        {
+            "title": "theMessenger",
+            "content": "Simple Messenger.",
+            "date": "2020-10-10",
+            "website" : "",
+            "github" : "https://github.com/ShawnAlisson/theMessenger",
+            "image" : "/assets/themessenger.png"
+
+        },
+        {
+            "title": "translateBar",
+            "content": "Simple Google Translate Shortcut for macOS Menu Bar.",
+            "date": "",
+            "website" : "",
+            "github" : "https://github.com/ShawnAlisson/translateBar",
+            "image" : "/assets/translateapp.png"
+
+        },
+        {
+            "title": "theCalendar",
+            "content": "Simple Persian Calendar Widget for macOS.",
+            "date": "",
+            "website" : "",
+            "github" : "https://github.com/ShawnAlisson/theCalendar",
+            "image" : "/assets/calendar.png"
+
+        },
+        {
+            "title": "theLanding",
+            "content": "Simple Landing Page for introducing iOS & macOS apps.",
+            "date": "",
+            "website" : "https://portefeuille.ir",
+            "github" : "https://github.com/ShawnAlisson/theLanding",
+            "image" : "/assets/landing.png"
+
+        }
+       
+    ]
+   
+}
