@@ -1,34 +1,131 @@
 {
     "posts": [
         {
+            "title": "Challenjeu App v1.8.0",
+            "content": "Challenjeu App v1.8.0 Build(230630)",
+            "changelog": [
+"Tags for Challenges", "Search Challenges By Tag", "Mention Users", "Completed Tasks Sorting", "Available in Offline Mode", "(Challenge Followed By) List", "Bug fixes and improvements"
+            ],
+            "date": "June 30 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.7.1",
+            "content": "Challenjeu App v1.7.1 Build(230624)",
+            "changelog": [
+"Bug fixes and improvements"
+            ],
+            "date": "June 24 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.7.0",
+            "content": "Challenjeu App v1.7.0 Build(230622)",
+            "changelog": [
+"Pin Favorite Challenges", "Individual Deadline for Tasks", "Links/Emails Openable in Messenger", "(Challenge Followed By) Added to Challenges", "Bug fixes and improvements"
+            ],
+            "date": "June 22 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.6.0",
+            "content": "Challenjeu App v1.6.0 Build(230615)",
+            "changelog": [
+"List of Followers/Followings", "Like Messages in Messenger", "Edited Challenges Indicator", "Custom Deadline Notification in New/Edit Challenges", "Bug fixes and improvements"
+            ],
+            "date": "June 15 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.5.0",
+            "content": "Challenjeu App v1.5.0 Build(230605)",
+            "changelog": [
+"Delete Chat in Messenger", "Edit Messages in Messenger", "Reply in Messenger", "Reset Password", "Notification of Deadlines", "Google OAuth", "GitHub OAuth", "macOS 10.15 or higher supported", "Bug fixes and improvements"
+            ],
+            "date": "June 05 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.4.0",
+            "content": "Challenjeu App v1.4.0 Build(230529)",
+            "changelog": [
+"New Native Image Cropper for iOS/Android", "Archive Section", "Language Selector", "Add/Edit/Delete Image in Edit Challenges", "Remove Avatar Option", "Remove Profile Details Option", "Locale Date", "Bug fixes and improvements"
+            ],
+            "date": "May 29 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.3.0",
+            "content": "Challenjeu App v1.3.0 Build(230523)",
+            "changelog": [
+"Sort Challenges in Profile (Ascending / Descending)", "Categorize Challenges in Profile (All / User Challenges / Saved Challenges)", "Pin Favorite Chats", "Instant Message Notifications and Update", "Dark/Light/System Mode Selector", "Image uploading for desktop (Challenges / Messenger / Avatar)", "Bug fixes and improvements"
+            ],
+            "date": "May 23 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+
+        {
+            "title": "Challenjeu App v1.2.1",
+            "content": "Challenjeu App v1.2.1 Build(230519)",
+            "changelog": [
+"Bug fixes and improvements"
+            ],
+            "date": "May 19 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.2.0",
+            "content": "Challenjeu App v1.2.0 Build(230516)",
+            "changelog": [
+"Image Cropper", "Push Notification", "Task Status", "Bug fixes and improvements"
+            ],
+            "date": "May 17 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
+            "title": "Challenjeu App v1.1.1",
+            "content": "Challenjeu App v1.1.1 Build(230512)",
+            "changelog": [
+"Bug fixes and performance improvements."
+            ],
+            "date": "May 12 2023",
+            "icon" : "/assets/challenjeu.png"
+        },
+        {
             "title": "Challenjeu v1.0",
             "content": "Challenjeu v1.0 released.",
-            "date": ""
+            "date": "",
+            "icon" : "/assets/challenjeu.png"
         },
         {
             "title": "Portefeuille v1.0",
             "content": "Portefeuille v1.0 released.",
-            "date": ""
+            "date": "",
+            "icon" : "/assets/portefeuille.png"
         },
         {
             "title": "theMessenger Merged",
             "content": "theMessenger merged to Challenjeu.",
-            "date": ""
+            "date": "",
+            "icon" : "/assets/themessenger.png"
         },
         {
             "title": "translateBar 1.0.1",
             "content": "translateBar v1.0.1 released.",
-            "date": ""
+            "date": "",
+            "icon" : "/assets/translateapp.png"
         },
         {
             "title": "translateBar 1.0.0",
             "content": "translateBar v1.0.0 released.",
-            "date": ""
+            "date": "",
+            "icon" : "/assets/translateapp.png"
         },
         {
             "title": "theMessenger Beta",
             "content": "theMessenger Beta released.",
-            "date": ""
+            "date": "",
+            "icon" : "/assets/themessenger.png"
         }
         
     ]

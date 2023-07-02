@@ -1,21 +1,21 @@
 {
     "projects": [
         {
+            "title": "Challenjeu",
+            "content": "Challenjeu is a social platform that lets you create and share challenges with others. Set and achieve your goals with the support of a community, follow each other's progress, and communicate to exchange ideas and stay motivated. Join Challenjeu today and start challenging yourself!",
+            "date": "",
+            "website" : "https://challenjeu.ir",
+            "github" : "https://github.com/challenjeu/challenjeu-app",
+            "image" : "/assets/challenjeu.png"
+
+        },
+        {
             "title": "Portefeuille",
             "content": "Money and Crypto Management App for iOS & macOS.",
             "date": "",
             "website" : "https://portefeuille.ir",
             "github" : "https://github.com/ShawnAlisson/Portefeuille",
             "image" : "/assets/portefeuille.png"
-
-        },
-        {
-            "title": "Challenjeu",
-            "content": "",
-            "date": "",
-            "website" : "https://challenjeu.ir",
-            "github" : "",
-            "image" : "/assets/challenjeu.png"
 
         },
         {
