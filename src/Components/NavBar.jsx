@@ -11,14 +11,14 @@ const NavBar = () => {
       backdropFilter="auto"
       backdropContrast="90%"
       w="100%"
-      borderRadius={"25"}
+      borderRadius={"10"}
       p="1"
       boxShadow="lg"
     >
       <Box display={"flex"} w="100%">
         <Button
           variant={"ghost"}
-          borderRadius="25"
+          borderRadius="10"
           onClick={() => {
             navigate("/");
           }}
@@ -27,7 +27,7 @@ const NavBar = () => {
         </Button>
         <Button
           variant={"ghost"}
-          borderRadius="25"
+          borderRadius="10"
           onClick={() => {
             navigate("/blog");
           }}
@@ -36,7 +36,7 @@ const NavBar = () => {
         </Button>
         <Button
           variant={"ghost"}
-          borderRadius="25"
+          borderRadius="10"
           onClick={() => {
             navigate("/projects");
           }}

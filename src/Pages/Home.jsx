@@ -1,4 +1,11 @@
-import { Avatar, Box, Button, SimpleGrid, VStack } from "@chakra-ui/react";
+import {
+  Avatar,
+  Box,
+  Button,
+  SimpleGrid,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import BlogCompact from "../Components/BlogCompact";
@@ -15,12 +22,29 @@ const Home = () => {
   const { projects } = project;
   return (
     <VStack m="5" p="5">
+      <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <NavBar />
 
       <Box
         w="100%"
         display={"flex"}
         flexDir={{ base: "column", md: "row" }}
+        alignItems={"center"}
         justifyContent="space-between"
       >
         <Box
@@ -28,8 +52,8 @@ const Home = () => {
           backdropContrast="90%"
           boxShadow="lg"
           p="2"
-          borderRadius={"25"}
-          w={{ base: "100%", md: "50%" }}
+          borderRadius={"15"}
+          w={{ base: "100%", md: "55%" }}
           align="center"
           display={"flex"}
           flexDir="column"
@@ -39,18 +63,39 @@ const Home = () => {
         >
           <Box
             display={"flex"}
-            flexDir={{ base: "row", md: "column" }}
+            flexDir={{ base: "column", md: "row" }}
             w="100%"
             p="5"
             justifyContent={"space-between"}
           >
-            <Avatar
-              boxShadow="lg"
-              name="S A"
-              src="/assets/Memoji.png"
-              size={"2xl"}
-            />
-            <Box mt="8" display={"flex"} justifyContent="center">
+            <Box justifyContent={"center"} display={"flex"}>
+              <Avatar
+                boxShadow="lg"
+                name="S A"
+                src="/assets/Memoji.png"
+                size={"2xl"}
+              />
+            </Box>
+
+            <Box
+              mt="8"
+              display={"flex"}
+              flexDir={"column"}
+              justifyContent="space-between"
+            >
+              <Box
+                display={"flex"}
+                flexDir={{ base: "column", sm: "row" }}
+                justifyContent={"center"}
+              >
+                <Text mx="1" fontSize={"26"}>
+                  Shayan
+                </Text>
+                <Text fontSize={"26"} fontWeight={"bold"}>
+                  Alizadeh
+                </Text>
+              </Box>
+
               <Contacts />
             </Box>
           </Box>
@@ -62,7 +107,7 @@ const Home = () => {
           backdropFilter="auto"
           backdropContrast="90%"
           p="3"
-          borderRadius={"25"}
+          borderRadius={"15"}
           w="100%"
           my="4"
           mx={{ base: "0", md: "4" }}
@@ -75,7 +120,7 @@ const Home = () => {
             boxShadow="lg"
             m="2"
             w="20"
-            borderRadius={"25"}
+            borderRadius={"10"}
             onClick={() => {
               navigate("/blog");
             }}
@@ -92,7 +137,7 @@ const Home = () => {
           backdropFilter="auto"
           backdropContrast="90%"
           p="3"
-          borderRadius={"25"}
+          borderRadius={"15"}
           w="100%"
           mx={{ base: "0", md: "4" }}
           my="4"
@@ -106,7 +151,7 @@ const Home = () => {
             boxShadow="lg"
             w="20"
             mx="2"
-            borderRadius={"25"}
+            borderRadius={"10"}
             onClick={() => {
               navigate("/projects");
             }}

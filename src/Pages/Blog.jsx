@@ -12,7 +12,9 @@ const Blog = () => {
       {posts.map((post) => (
         <SinglePost
           title={post.title}
+          icon={post.icon}
           content={post.content}
+          changelog={post.changelog}
           date={post.date}
         />
       ))}

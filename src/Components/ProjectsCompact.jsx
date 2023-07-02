@@ -10,7 +10,7 @@ const ProjectsCompact = ({ title, image }) => {
       boxShadow="lg"
       backdropFilter="auto"
       backdropContrast="90%"
-      borderRadius={"25"}
+      borderRadius={"15"}
       m="3"
       p={"3"}
     >

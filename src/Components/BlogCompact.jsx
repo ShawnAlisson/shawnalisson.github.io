@@ -8,7 +8,7 @@ const BlogCompact = ({ title, date }) => {
       backdropContrast="90%"
       display={"flex"}
       justifyContent="space-between"
-      borderRadius="25"
+      borderRadius="15"
       px="3"
       py="2"
       my="3"
