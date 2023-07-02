@@ -58,6 +58,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build React.js
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
+        env:
+            CI: ""
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
