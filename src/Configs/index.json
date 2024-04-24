@@ -1,9 +1,13 @@
 {
+  "firstName": "Shayan",
+  "lastName": "A Pahlavan",
+  "avatar": "/assets/Memoji_2.png",
     "about": {
         "socialMedia": {
           "github": "https://github.com/ShawnAlisson",
           "twitter": "https://twitter.com/ShawnAlisson",
-          "linkedin": "https://www.linkedin.com/in/shawnalisson"
+          "linkedin": "https://www.linkedin.com/in/shawnalisson",
+          "email": "shayan@pahlavan.co.uk"
         },
         "build": "Build (230105)"
       }

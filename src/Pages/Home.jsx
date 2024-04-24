@@ -15,101 +15,104 @@ import NavBar from "../Components/NavBar";
 import ProjectsCompact from "../Components/ProjectsCompact";
 import blog from "../Configs/blog.json";
 import project from "../Configs/projects.json";
+import index from "../Configs/index.json";
 
 const Home = () => {
   const navigate = useNavigate();
   const { posts } = blog;
   const { projects } = project;
   return (
-    <VStack m="5" p="5">
-      <div class="background">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <NavBar />
+    <div className='justify-between '>
+      <VStack m='5' p='5'>
+        <div class='background'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <NavBar />
 
-      <Box
-        w="100%"
-        display={"flex"}
-        flexDir={{ base: "column", md: "row" }}
-        alignItems={"center"}
-        justifyContent="space-between"
-      >
         <Box
-          backdropFilter="auto"
-          backdropContrast="90%"
-          boxShadow="lg"
-          p="2"
-          borderRadius={"15"}
-          w={{ base: "100%", md: "55%" }}
-          align="center"
+          w='100%'
           display={"flex"}
-          flexDir="column"
-          my="4"
-          mx={{ base: "0", md: "4" }}
-          justifyContent="space-between"
+          flexDir={{ base: "column", md: "row" }}
+          alignItems={"center"}
+          justifyContent='space-between'
         >
           <Box
+            backdropFilter='auto'
+            backdropContrast='90%'
+            boxShadow='lg'
+            p='2'
+            borderRadius={"15"}
+            w={{ base: "100%", md: "100%" }}
+            align='center'
             display={"flex"}
-            flexDir={{ base: "column", md: "row" }}
-            w="100%"
-            p="5"
-            justifyContent={"space-between"}
+            flexDir='column'
+            my='4'
+            mx={{ base: "0", md: "4" }}
+            justifyContent='space-between'
           >
-            <Box justifyContent={"center"} display={"flex"}>
-              <Avatar
-                boxShadow="lg"
-                name="S A"
-                src="/assets/Memoji.png"
-                size={"2xl"}
-              />
-            </Box>
-
             <Box
-              mt="8"
               display={"flex"}
-              flexDir={"column"}
-              justifyContent="space-between"
+              flexDir={{ base: "column", md: "row" }}
+              w='100%'
+              p='5'
+              justifyContent={"space-between"}
             >
-              <Box
-                display={"flex"}
-                flexDir={{ base: "column", sm: "row" }}
-                justifyContent={"center"}
-              >
-                <Text mx="1" fontSize={"26"}>
-                  Shayan
-                </Text>
-                <Text fontSize={"26"} fontWeight={"bold"}>
-                  Alizadeh
-                </Text>
+              <Box justifyContent={"center"} display={"flex"}>
+                <Avatar
+                  className='transform transition duration-300 hover:scale-95'
+                  boxShadow='lg'
+                  name='S A'
+                  src={index.avatar}
+                  size={"2xl"}
+                />
               </Box>
 
-              <Contacts />
+              <Box
+                mt='8'
+                display={"flex"}
+                flexDir={"column"}
+                justifyContent='space-between'
+              >
+                <Box
+                  display={"flex"}
+                  flexDir={{ base: "column", sm: "row" }}
+                  justifyContent={"center"}
+                >
+                  <Text mx='1' fontSize={"26"}>
+                    {index.firstName}
+                  </Text>
+                  <Text fontSize={"26"} fontWeight={"bold"}>
+                    {index.lastName}
+                  </Text>
+                </Box>
+
+                <Contacts />
+              </Box>
             </Box>
+            <Box display='flex' flexDirection={"column"}></Box>
           </Box>
-          <Box display="flex" flexDirection={"column"}></Box>
-        </Box>
-        <Box
-          boxShadow="lg"
-          align="start"
-          backdropFilter="auto"
-          backdropContrast="90%"
-          p="3"
+          {/* <Box
+          boxShadow='lg'
+          align='start'
+          backdropFilter='auto'
+          backdropContrast='90%'
+          p='3'
           borderRadius={"15"}
-          w="100%"
-          my="4"
+          w='100%'
+          my='4'
           mx={{ base: "0", md: "4" }}
         >
           {posts.slice(0, 4).map((post, i) => (
@@ -117,9 +120,9 @@ const Home = () => {
           ))}
 
           <Button
-            boxShadow="lg"
-            m="2"
-            w="20"
+            boxShadow='lg'
+            m='2'
+            w='20'
             borderRadius={"10"}
             onClick={() => {
               navigate("/blog");
@@ -127,41 +130,44 @@ const Home = () => {
           >
             More
           </Button>
+        </Box> */}
         </Box>
-      </Box>
-      <Box display={"flex"} w="100%">
-        <Box
-          boxShadow="lg"
-          display={"flex"}
-          flexDir="column"
-          backdropFilter="auto"
-          backdropContrast="90%"
-          p="3"
-          borderRadius={"15"}
-          w="100%"
-          mx={{ base: "0", md: "4" }}
-          my="4"
-        >
-          <SimpleGrid minChildWidth="200px" w="100%">
-            {projects.slice(0, 4).map((project, i) => (
-              <ProjectsCompact title={project.title} image={project.image} />
-            ))}
-          </SimpleGrid>
-          <Button
-            boxShadow="lg"
-            w="20"
-            mx="2"
-            borderRadius={"10"}
-            onClick={() => {
-              navigate("/projects");
-            }}
+        <Box display={"flex"} w='100%'>
+          <Box
+            boxShadow='lg'
+            display={"flex"}
+            flexDir='column'
+            backdropFilter='auto'
+            backdropContrast='90%'
+            p='3'
+            borderRadius={"15"}
+            w='100%'
+            mx={{ base: "0", md: "4" }}
+            my='4'
           >
-            More
-          </Button>
+            <SimpleGrid minChildWidth='200px' w='100%'>
+              {projects.slice(0, 4).map((project, i) => (
+                <ProjectsCompact title={project.title} image={project.image} />
+              ))}
+            </SimpleGrid>
+            <Button
+              boxShadow='lg'
+              w='20'
+              mx='2'
+              borderRadius={"10"}
+              onClick={() => {
+                navigate("/projects");
+              }}
+            >
+              More
+            </Button>
+          </Box>
         </Box>
-      </Box>
-      <Footer />
-    </VStack>
+      </VStack>
+      <div className=' flex flex-row z-50  justify-center'>
+        <Footer />
+      </div>
+    </div>
   );
 };
 

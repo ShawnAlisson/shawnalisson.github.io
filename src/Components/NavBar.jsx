@@ -8,24 +8,24 @@ const NavBar = () => {
     <Box
       display={"flex"}
       justifyContent={"space-between"}
-      backdropFilter="auto"
-      backdropContrast="90%"
-      w="100%"
+      // backdropFilter='auto'
+      // backdropContrast='90%'
+      w='100%'
       borderRadius={"10"}
-      p="1"
-      boxShadow="lg"
+      p='1'
+      // boxShadow='lg'
     >
-      <Box display={"flex"} w="100%">
+      <Box display={"flex"} w='100%'>
         <Button
           variant={"ghost"}
-          borderRadius="10"
+          borderRadius='10'
           onClick={() => {
             navigate("/");
           }}
         >
           Home
         </Button>
-        <Button
+        {/* <Button
           variant={"ghost"}
           borderRadius="10"
           onClick={() => {
@@ -33,10 +33,10 @@ const NavBar = () => {
           }}
         >
           Blog
-        </Button>
+        </Button> */}
         <Button
           variant={"ghost"}
-          borderRadius="10"
+          borderRadius='10'
           onClick={() => {
             navigate("/projects");
           }}

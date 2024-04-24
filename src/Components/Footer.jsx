@@ -7,11 +7,11 @@ const Footer = () => {
   const { about } = config;
   return (
     <div>
-      <Box m="2">
+      <Box m='2'>
         <ColorModeSelector />
       </Box>
       <p>
-        <a href="https://github.com/ShawnAlisson/thePersonal">{about.build}</a>{" "}
+        <a href='https://github.com/ShawnAlisson/thePersonal'>{about.build}</a>{" "}
         &copy; {new Date().getFullYear()}
       </p>
     </div>

@@ -2,11 +2,19 @@
     "projects": [
         {
             "title": "Challenjeu",
-            "content": "Challenjeu is a social platform that lets you create and share challenges with others. Set and achieve your goals with the support of a community, follow each other's progress, and communicate to exchange ideas and stay motivated. Join Challenjeu today and start challenging yourself!",
+            "content": "Social platform that lets you create and share challenges with others. Set and achieve your goals with the support of a community, follow each other's progress, and communicate to exchange ideas and stay motivated.",
             "date": "",
-            "website" : "https://challenjeu.ir",
-            "github" : "https://github.com/challenjeu/challenjeu-app",
+            "website" : "https://challenjeu.com",
             "image" : "/assets/challenjeu.png"
+
+        },
+        {
+            "title": "Quyi",
+            "content": "E-Commerce and Marketplace",
+            "date": "",
+            "website" : "https://quyi.ir",
+           
+            "image" : "/assets/quyi.png"
 
         },
         {
