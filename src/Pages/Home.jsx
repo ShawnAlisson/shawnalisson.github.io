@@ -147,7 +147,11 @@ const Home = () => {
           >
             <SimpleGrid minChildWidth='200px' w='100%'>
               {projects.slice(0, 4).map((project, i) => (
-                <ProjectsCompact title={project.title} image={project.image} />
+                <ProjectsCompact
+                  title={project.title}
+                  image={project.image}
+                  website={project.website}
+                />
               ))}
             </SimpleGrid>
             <Button

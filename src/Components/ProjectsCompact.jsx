@@ -1,9 +1,10 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-const ProjectsCompact = ({ title, image }) => {
+const ProjectsCompact = ({ title, image, website }) => {
   return (
     <Box
+      onClick={() => (website ? window.open(website) : null)}
       display={"flex"}
       flexDirection={"column"}
       align='center'
@@ -13,6 +14,7 @@ const ProjectsCompact = ({ title, image }) => {
       borderRadius={"15"}
       m='3'
       p={"3"}
+      alignItems='center'
     >
       <Image
         className='transform transition duration-300 hover:scale-95'

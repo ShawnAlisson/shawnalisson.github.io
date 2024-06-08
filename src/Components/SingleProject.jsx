@@ -13,25 +13,35 @@ const SingleProject = ({ title, content, image, website, github }) => {
   const bg = useColorModeValue("gray.600", "white");
   return (
     <Box
-      boxShadow='lg'
       display={"flex"}
+      flexDir={{ base: "column", md: "row" }}
+      boxShadow='lg'
       backdropFilter='auto'
       backdropContrast='90%'
       borderRadius='25'
       p='5'
       my='5'
+      className='transform transition duration-300 hover:scale-95'
+      alignItems={{ base: "center", md: "flex-start" }}
     >
-      <Image
-        className='transform transition duration-300 hover:scale-95'
-        h='150'
-        borderRadius={"25"}
-        src={image}
-      ></Image>
-      <Box mx='5' display={"flex"} flexDir='column' align='start'>
+      <Image h='150' borderRadius={"25"} src={image}></Image>
+
+      <Box
+        mx='5'
+        display={"flex"}
+        flexDir='column'
+        justifyContent={{ base: "center", md: "flex-start" }}
+        textAlign={{ base: "center", md: "start" }}
+      >
         <Text fontSize={"2xl"}>{title}</Text>
 
         <Text>{content}</Text>
-        <Box>
+
+        <Box
+          display='flex'
+          justifyContent={{ base: "center", md: "flex-start" }}
+          alignItems={"center"}
+        >
           {github && (
             <IconButton
               className='transform transition duration-300 hover:scale-95'

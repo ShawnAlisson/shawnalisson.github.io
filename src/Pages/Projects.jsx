@@ -8,9 +8,9 @@ import Footer from "../Components/Footer";
 const Projects = () => {
   const { projects } = project;
   return (
-    <VStack m="5" p="5">
+    <VStack m='5' p='5'>
       <NavBar />
-      <Box w="100%">
+      <Box maxW={1000}>
         {projects.map((project, i) => (
           <SingleProject
             title={project.title}
