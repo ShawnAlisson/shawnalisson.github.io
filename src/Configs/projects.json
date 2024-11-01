@@ -17,26 +17,43 @@
 
         },
         {
-            "title": "Quyi",
-            "content": "E-Commerce and Marketplace",
+            "title": "MeloMix",
+            "content": "Unwind and drift into serenity with MeloMix! Whether you need a moment of calm during the day, soothing background sounds for focus, or a perfect blend of sounds to help you fall asleep, MeloMix has everything you need. Explore a vast selection of relaxing soundscapes across carefully curated categories like Nature, City & Ambience, White Noise, Fire & Warmth, and Calm & Rhythmic Sounds. Each category is thoughtfully crafted to provide a unique auditory experience, tailored to help you find peace and rest.",
             "date": "",
-            "website" : "https://quyi.ir",
+            "website" : "https://www.pahlavan.co.uk/melomix",
            
+            "image" : "/assets/melomix.png"
+
+        },
+        {
+            "title": "PartyCard",
+            "content": "Unleash fun with our party game app! Play Truth or Dare, movie & music challenges, couples' games, and more. Even create your own games. Perfect for any party!",
+            "date": "",
+            "website" : "https://www.pahlavan.co.uk/partycard",
+           
+            "image" : "/assets/partycard.png"
+
+        },
+        {
+            "title": "Quyi",
+            "content": "A modern e-commerce marketplace built with Nest.js, Next.js, MongoDB, and Tailwind CSS. This full-stack project provides robust backend APIs, dynamic product management, and a responsive, polished UI. Features include user authentication, product CRUD operations, and advanced search and filtering for an enhanced shopping experience.",
+            "date": "",
+            "website" : "",
             "image" : "/assets/quyi.png"
 
         },
         {
             "title": "Portefeuille",
-            "content": "Money and Crypto Management App for iOS & macOS.",
+            "content": "A comprehensive finance app built with Swift and SwiftUI for iOS and macOS, designed to help users manage both traditional finances and cryptocurrencies. The app provides tools for tracking expenses, monitoring investments, and managing crypto portfolios in real-time.",
             "date": "",
-            "website" : "https://portefeuille.ir",
+            "website" : "",
             "github" : "https://github.com/ShawnAlisson/Portefeuille",
             "image" : "/assets/portefeuille.png"
 
         },
         {
             "title": "theMessenger",
-            "content": "Simple Messenger.",
+            "content": "A dynamic chat app built using the MERN stack (MongoDB, Express, React, Node.js) with Socket.IO for real-time messaging. theMessenger offers instant communication with features like user authentication, group chats, and message notifications. Designed for fast, seamless interaction, it’s ideal for users seeking a reliable, real-time messaging platform.",
             "date": "2020-10-10",
             "website" : "",
             "github" : "https://github.com/ShawnAlisson/theMessenger",
@@ -44,8 +61,17 @@
 
         },
         {
+            "title": "ContentGen",
+            "content": "ContentGen is AI-Powered Automated Content Aggregator and Rewriter. Built with Python, it fetches and filters the latest articles from various sources, reformats them for reposting, and supports multilingual translation. This tool streamlines content creation, ensuring blogs are updated with relevant and unique AI-enhanced content.",
+            "date": "",
+            "website" : "",
+            "github" : "https://github.com/ShawnAlisson/content_gen",
+            "image" : "/assets/content_gen.png"
+
+        },
+        {
             "title": "translateBar",
-            "content": "Simple Google Translate Shortcut for macOS Menu Bar.",
+            "content": "A lightweight Electron app for macOS that adds a Google Translate shortcut to the menu bar, allowing quick access to translation services. With a simple click, users can translate text on the go without opening a browser, streamlining language support directly from the menu bar for enhanced productivity.",
             "date": "",
             "website" : "",
             "github" : "https://github.com/ShawnAlisson/translateBar",
@@ -53,8 +79,17 @@
 
         },
         {
+            "title": "CompanyLanding",
+            "content": "This project is a responsive landing page built with Vue 3, designed to showcase your company's products effectively across devices.",
+            "date": "",
+            "website" : "https://www.pahlavan.co.uk/",
+            "github": "https://github.com/ShawnAlisson/company-landing",
+            "image" : "/assets/pahlavan.png"
+
+        },
+        {
             "title": "theCalendar",
-            "content": "Simple Persian Calendar Widget for macOS.",
+            "content": "A sleek widget that brings the Persian calendar to the macOS desktop. Designed with Swift and SwiftUI, this minimalistic widget displays the current date in the Persian calendar format, integrating seamlessly with macOS.",
             "date": "",
             "website" : "",
             "github" : "https://github.com/ShawnAlisson/theCalendar",
@@ -63,9 +98,9 @@
         },
         {
             "title": "theLanding",
-            "content": "Simple Landing Page for introducing iOS & macOS apps.",
+            "content": "A clean, responsive landing page built with Next.js to showcase iOS and macOS applications. Designed for easy navigation, the page highlights app features, screenshots, and download options, with fast loading and SEO optimization for better visibility. Perfect for providing users with a quick overview and direct access to download links for featured apps.",
             "date": "",
-            "website" : "https://portefeuille.ir",
+            "website" : "",
             "github" : "https://github.com/ShawnAlisson/theLanding",
             "image" : "/assets/landing.png"
 

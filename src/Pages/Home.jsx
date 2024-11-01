@@ -22,9 +22,9 @@ const Home = () => {
   const { posts } = blog;
   const { projects } = project;
   return (
-    <div className='justify-between '>
-      <VStack m='5' p='5'>
-        <div class='background'>
+    <div className="">
+      <VStack m="5" p="5">
+        <div class="background">
           <span></span>
           <span></span>
           <span></span>
@@ -43,55 +43,57 @@ const Home = () => {
         <NavBar />
 
         <Box
-          w='100%'
+          maxW={"800px"}
+          w="100%"
           display={"flex"}
           flexDir={{ base: "column", md: "row" }}
           alignItems={"center"}
-          justifyContent='space-between'
+          justifyContent="space-between"
         >
           <Box
-            backdropFilter='auto'
-            backdropContrast='90%'
-            boxShadow='lg'
-            p='2'
+            backdropFilter="auto"
+            backdropContrast="90%"
+            boxShadow="lg"
+            p="2"
             borderRadius={"15"}
             w={{ base: "100%", md: "100%" }}
-            align='center'
+            align="center"
             display={"flex"}
-            flexDir='column'
-            my='4'
+            flexDir="column"
+            my="4"
             mx={{ base: "0", md: "4" }}
-            justifyContent='space-between'
+            justifyContent="space-between"
           >
             <Box
               display={"flex"}
               flexDir={{ base: "column", md: "row" }}
-              w='100%'
-              p='5'
+              w="100%"
+              p="5"
               justifyContent={"space-between"}
+              alignItems={"center"}
             >
               <Box justifyContent={"center"} display={"flex"}>
                 <Avatar
-                  className='transform transition duration-300 hover:scale-95'
-                  boxShadow='lg'
-                  name='S A'
+                  className="transform transition duration-300 hover:scale-95"
+                  boxShadow="lg"
+                  name="S A"
                   src={index.avatar}
                   size={"2xl"}
                 />
               </Box>
 
               <Box
-                mt='8'
+                mt="8"
                 display={"flex"}
                 flexDir={"column"}
-                justifyContent='space-between'
+                justifyContent="space-between"
               >
                 <Box
                   display={"flex"}
                   flexDir={{ base: "column", sm: "row" }}
                   justifyContent={"center"}
                 >
-                  <Text mx='1' fontSize={"26"}>
+                  <Text mx="1" fontSize={"26"}>
                     {index.firstName}
                   </Text>
                   <Text fontSize={"26"} fontWeight={"bold"}>
@@ -99,54 +101,31 @@ const Home = () => {
                   </Text>
                 </Box>
 
+                <Text mb={4} fontSize={"14"} fontWeight={"thin"}>
+                  {index.title}
+                </Text>
+
                 <Contacts />
               </Box>
             </Box>
-            <Box display='flex' flexDirection={"column"}></Box>
+            <Box display="flex" flexDirection={"column"}></Box>
           </Box>
-          {/* <Box
-          boxShadow='lg'
-          align='start'
-          backdropFilter='auto'
-          backdropContrast='90%'
-          p='3'
-          borderRadius={"15"}
-          w='100%'
-          my='4'
-          mx={{ base: "0", md: "4" }}
-        >
-          {posts.slice(0, 4).map((post, i) => (
-            <BlogCompact title={post.title} date={post.date} />
-          ))}
-
-          <Button
-            boxShadow='lg'
-            m='2'
-            w='20'
-            borderRadius={"10"}
-            onClick={() => {
-              navigate("/blog");
-            }}
-          >
-            More
-          </Button>
-        </Box> */}
         </Box>
-        <Box display={"flex"} w='100%'>
+        <Box display={"flex"} w="100%" maxW={"800px"}>
           <Box
-            boxShadow='lg'
+            boxShadow="lg"
             display={"flex"}
-            flexDir='column'
-            backdropFilter='auto'
-            backdropContrast='90%'
-            p='3'
+            flexDir="column"
+            backdropFilter="auto"
+            backdropContrast="90%"
+            p="3"
             borderRadius={"15"}
-            w='100%'
+            w="100%"
             mx={{ base: "0", md: "4" }}
-            my='4'
+            my="4"
           >
-            <SimpleGrid minChildWidth='200px' w='100%'>
-              {projects.slice(0, 4).map((project, i) => (
+            <SimpleGrid minChildWidth="200px" w="100%">
+              {projects.slice(0, 6).map((project, i) => (
                 <ProjectsCompact
                   title={project.title}
                   image={project.image}
@@ -155,20 +134,21 @@ const Home = () => {
               ))}
             </SimpleGrid>
             <Button
-              boxShadow='lg'
-              w='20'
-              mx='2'
+              fontWeight={"thin"}
+              boxShadow="lg"
+              w="36"
+              mx="2"
               borderRadius={"10"}
               onClick={() => {
                 navigate("/projects");
               }}
             >
-              More
+              All Projects
             </Button>
           </Box>
         </Box>
       </VStack>
-      <div className=' flex flex-row z-50  justify-center'>
+      <div className=" flex flex-row z-50  justify-center">
         <Footer />
       </div>
     </div>

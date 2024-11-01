@@ -10,15 +10,16 @@ const NavBar = () => {
       justifyContent={"space-between"}
       // backdropFilter='auto'
       // backdropContrast='90%'
-      w='100%'
+      maxW={"800px"}
+      w="100%"
       borderRadius={"10"}
-      p='1'
+      p="1"
       // boxShadow='lg'
     >
-      <Box display={"flex"} w='100%'>
+      <Box display={"flex"} w="100%">
         <Button
           variant={"ghost"}
-          borderRadius='10'
+          borderRadius="10"
           onClick={() => {
             navigate("/");
           }}
@@ -36,7 +37,7 @@ const NavBar = () => {
         </Button> */}
         <Button
           variant={"ghost"}
-          borderRadius='10'
+          borderRadius="10"
           onClick={() => {
             navigate("/projects");
           }}

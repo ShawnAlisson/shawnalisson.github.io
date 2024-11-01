@@ -6,12 +6,12 @@ import ColorModeSelector from "./ColorModeSelector";
 const Footer = () => {
   const { about } = config;
   return (
-    <div>
-      <Box m='2'>
+    <div className="mb-4 opacity-50 font-thin text-xs">
+      {/* <Box m='2'>
         <ColorModeSelector />
-      </Box>
+      </Box> */}
       <p>
-        <a href='https://github.com/ShawnAlisson/thePersonal'>{about.build}</a>{" "}
+        <a href="https://github.com/ShawnAlisson/thePersonal">{about.build}</a>{" "}
         &copy; {new Date().getFullYear()}
       </p>
     </div>

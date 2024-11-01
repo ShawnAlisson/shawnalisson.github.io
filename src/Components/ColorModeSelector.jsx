@@ -36,7 +36,9 @@ const ColorModeSelector = () => {
   };
 
   useEffect(() => {
-    setSystemColor(localStorage.getItem("useSystemColor"));
+    // setSystemColor(localStorage.setItem("useSystemColor"));
+    // setSystemColor("useSystemColor");
+    setColorMode("system");
   }, []);
 
   return (

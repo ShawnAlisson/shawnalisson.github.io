@@ -3,8 +3,14 @@ import "./App.css";
 import Blog from "./Pages/Blog";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
+import { useEffect } from "react";
+import { useColorMode } from "@chakra-ui/react";
 
 function App() {
+  const { setColorMode } = useColorMode();
+  useEffect(() => {
+    setColorMode("system");
+  }, []);
   return (
     <div className="App">
       <Routes>
