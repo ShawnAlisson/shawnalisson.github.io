@@ -1,6 +1,14 @@
 {
     "projects": [
         {
+            "title": "Chayi",
+            "content": "Meet Chayi, your private, on-device AI companion that works entirely offline! With a diverse range of personas, Chayi is designed to assist, entertain, and support you in every aspect of life—all while keeping your data safe on your device. No internet needed, no data goes to a server, just intelligent, private conversations whenever you need them.",
+            "date": "",
+            "website" : "https://pahlavan.co.uk/chayi",
+            "image" : "/assets/chayi.png"
+
+        },
+        {
             "title": "Challenjeu",
             "content": "Social platform that lets you create and share challenges with others. Set and achieve your goals with the support of a community, follow each other's progress, and communicate to exchange ideas and stay motivated.",
             "date": "",
