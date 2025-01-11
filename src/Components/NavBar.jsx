@@ -44,6 +44,15 @@ const NavBar = () => {
         >
           Projects
         </Button>
+        <Button
+          variant={"ghost"}
+          borderRadius="10"
+          onClick={() => {
+            window.open("https://blog.shayan.pahlavan.co.uk", "_blank");
+          }}
+        >
+          Blog
+        </Button>
         {/* <Button
           variant={"ghost"}
           borderRadius="25"

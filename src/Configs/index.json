@@ -1,8 +1,8 @@
 {
   "firstName": "Shayan",
   "lastName": "A Pahlavan",
-  "title": "Full Stack Developer | Web & Mobile",
-  "avatar": "/assets/Memoji_2.png",
+  "title": "Software Engineer",
+  "avatar": "/assets/profile.jpeg",
     "about": {
         "socialMedia": {
           "github": "https://github.com/ShawnAlisson",
@@ -10,6 +10,6 @@
           "linkedin": "https://www.linkedin.com/in/shawnalisson",
           "email": "shayan@pahlavan.co.uk"
         },
-        "build": "Build (241101)"
+        "build": "Build (250111)"
       }
 }
