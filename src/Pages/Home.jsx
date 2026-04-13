@@ -1,30 +1,18 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  SimpleGrid,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import BlogCompact from "../Components/BlogCompact";
+import { useNavigate } from "react-router";
 import Contacts from "../Components/Contacts";
 import Footer from "../Components/Footer";
 import NavBar from "../Components/NavBar";
 import ProjectsCompact from "../Components/ProjectsCompact";
-import blog from "../Configs/blog.json";
 import project from "../Configs/projects.json";
 import index from "../Configs/index.json";
 
 const Home = () => {
   const navigate = useNavigate();
-  const { posts } = blog;
   const { projects } = project;
   return (
-    <div className="">
-      <VStack m="5" p="5">
-        <div class="background">
+    <div>
+      <div className="flex flex-col items-center m-5 p-5">
+        <div className="background">
           <span></span>
           <span></span>
           <span></span>
@@ -42,113 +30,50 @@ const Home = () => {
         </div>
         <NavBar />
 
-        <Box
-          maxW={"800px"}
-          w="100%"
-          display={"flex"}
-          flexDir={{ base: "column", md: "row" }}
-          alignItems={"center"}
-          justifyContent="space-between"
-        >
-          <Box
-            backdropFilter="auto"
-            backdropContrast="90%"
-            boxShadow="lg"
-            p="2"
-            borderRadius={"15"}
-            w={{ base: "100%", md: "100%" }}
-            align="center"
-            display={"flex"}
-            flexDir="column"
-            my="4"
-            mx={{ base: "0", md: "4" }}
-            justifyContent="space-between"
-          >
-            <Box
-              display={"flex"}
-              flexDir={{ base: "column", md: "row" }}
-              w="100%"
-              p="5"
-              justifyContent={"space-between"}
-              alignItems={"center"}
-            >
-              <Box justifyContent={"center"} display={"flex"}>
-                <Avatar
-                  className="transform transition duration-300 hover:scale-95"
-                  boxShadow="lg"
-                  name="S A"
+        <div className="max-w-[800px] w-full flex flex-col md:flex-row items-center justify-between">
+          <div className="backdrop-contrast-[.9] shadow-lg p-2 rounded-2xl w-full text-center flex flex-col my-4 mx-0 md:mx-4 justify-between">
+            <div className="flex flex-col md:flex-row w-full p-5 justify-between items-center">
+              <div className="flex justify-center">
+                <img
+                  className="shadow-lg rounded-full w-32 h-32 object-cover transition duration-300 hover:scale-95"
                   src={index.avatar}
-                  size={"2xl"}
+                  alt="S A"
                 />
-              </Box>
-
-              <Box
-                mt="8"
-                display={"flex"}
-                flexDir={"column"}
-                justifyContent="space-between"
-              >
-                <Box
-                  display={"flex"}
-                  flexDir={{ base: "column", sm: "row" }}
-                  justifyContent={"center"}
-                >
-                  <Text mx="1" fontSize={"26"}>
-                    {index.firstName}
-                  </Text>
-                  <Text fontSize={"26"} fontWeight={"bold"}>
-                    {index.lastName}
-                  </Text>
-                </Box>
-
-                <Text mb={4} fontSize={"14"} fontWeight={"thin"}>
-                  {index.title}
-                </Text>
-
+              </div>
+              <div className="mt-8 flex flex-col justify-between">
+                <div className="flex flex-col sm:flex-row justify-center">
+                  <p className="mx-1 text-[26px]">{index.firstName}</p>
+                  <p className="text-[26px] font-bold">{index.lastName}</p>
+                </div>
+                <p className="mb-4 text-sm font-thin">{index.title}</p>
                 <Contacts />
-              </Box>
-            </Box>
-            <Box display="flex" flexDirection={"column"}></Box>
-          </Box>
-        </Box>
-        <Box display={"flex"} w="100%" maxW={"800px"}>
-          <Box
-            boxShadow="lg"
-            display={"flex"}
-            flexDir="column"
-            backdropFilter="auto"
-            backdropContrast="90%"
-            p="3"
-            borderRadius={"15"}
-            w="100%"
-            mx={{ base: "0", md: "4" }}
-            my="4"
-          >
-            <SimpleGrid minChildWidth="200px" w="100%">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex w-full max-w-[800px]">
+          <div className="shadow-lg flex flex-col backdrop-contrast-[.9] p-3 rounded-2xl w-full mx-0 md:mx-4 my-4">
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] w-full">
               {projects.slice(0, 6).map((project, i) => (
                 <ProjectsCompact
+                  key={i}
                   title={project.title}
                   image={project.image}
                   website={project.website}
                 />
               ))}
-            </SimpleGrid>
-            <Button
-              fontWeight={"thin"}
-              boxShadow="lg"
-              w="36"
-              mx="2"
-              borderRadius={"10"}
-              onClick={() => {
-                navigate("/projects");
-              }}
+            </div>
+            <button
+              className="font-thin shadow-lg w-36 mx-2 rounded-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              onClick={() => navigate("/projects")}
             >
               All Projects
-            </Button>
-          </Box>
-        </Box>
-      </VStack>
-      <div className=" flex flex-row z-50  justify-center">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-row z-50 justify-center">
         <Footer />
       </div>
     </div>

@@ -1,5 +1,3 @@
-import { Box } from "@chakra-ui/react";
-import React from "react";
 import NavBar from "../Components/NavBar";
 import SinglePost from "../Components/SinglePost";
 import blog from "../Configs/blog.json";
@@ -7,10 +5,11 @@ import blog from "../Configs/blog.json";
 const Blog = () => {
   const { posts } = blog;
   return (
-    <Box m="5" p="5">
+    <div className="m-5 p-5">
       <NavBar />
-      {posts.map((post) => (
+      {posts.map((post, i) => (
         <SinglePost
+          key={i}
           title={post.title}
           icon={post.icon}
           content={post.content}
@@ -18,7 +17,7 @@ const Blog = () => {
           date={post.date}
         />
       ))}
-    </Box>
+    </div>
   );
 };
 

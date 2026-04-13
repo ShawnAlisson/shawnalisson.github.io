@@ -1,5 +1,3 @@
-import { Box, VStack } from "@chakra-ui/react";
-import React from "react";
 import NavBar from "../Components/NavBar";
 import SingleProject from "../Components/SingleProject";
 import project from "../Configs/projects.json";
@@ -8,11 +6,12 @@ import Footer from "../Components/Footer";
 const Projects = () => {
   const { projects } = project;
   return (
-    <VStack m='5' p='5'>
+    <div className="flex flex-col items-center m-5 p-5">
       <NavBar />
-      <Box maxW={1000}>
+      <div className="max-w-[1000px]">
         {projects.map((project, i) => (
           <SingleProject
+            key={i}
             title={project.title}
             content={project.content}
             image={project.image}
@@ -20,11 +19,11 @@ const Projects = () => {
             github={project.github}
           />
         ))}
-      </Box>
-      <Box display={"flex"}>
+      </div>
+      <div className="flex">
         <Footer />
-      </Box>
-    </VStack>
+      </div>
+    </div>
   );
 };
 

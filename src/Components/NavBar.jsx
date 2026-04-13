@@ -1,69 +1,32 @@
-import { Box, Button } from "@chakra-ui/react";
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 const NavBar = () => {
   const navigate = useNavigate();
   return (
-    <Box
-      display={"flex"}
-      justifyContent={"space-between"}
-      // backdropFilter='auto'
-      // backdropContrast='90%'
-      maxW={"800px"}
-      w="100%"
-      borderRadius={"10"}
-      p="1"
-      // boxShadow='lg'
-    >
-      <Box display={"flex"} w="100%">
-        <Button
-          variant={"ghost"}
-          borderRadius="10"
-          onClick={() => {
-            navigate("/");
-          }}
+    <div className="flex justify-between max-w-[800px] w-full rounded-lg p-1">
+      <div className="flex w-full">
+        <button
+          className="px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          onClick={() => navigate("/")}
         >
           Home
-        </Button>
-        {/* <Button
-          variant={"ghost"}
-          borderRadius="10"
-          onClick={() => {
-            navigate("/blog");
-          }}
-        >
-          Blog
-        </Button> */}
-        <Button
-          variant={"ghost"}
-          borderRadius="10"
-          onClick={() => {
-            navigate("/projects");
-          }}
+        </button>
+        <button
+          className="px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          onClick={() => navigate("/projects")}
         >
           Projects
-        </Button>
-        <Button
-          variant={"ghost"}
-          borderRadius="10"
-          onClick={() => {
-            window.open("https://blog.shayan.pahlavan.co.uk", "_blank");
-          }}
+        </button>
+        <button
+          className="px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          onClick={() =>
+            window.open("https://blog.shayan.pahlavan.co.uk", "_blank")
+          }
         >
           Blog
-        </Button>
-        {/* <Button
-          variant={"ghost"}
-          borderRadius="25"
-          onClick={() => {
-            navigate("about");
-          }}
-        >
-          About Me
-        </Button> */}
-      </Box>
-    </Box>
+        </button>
+      </div>
+    </div>
   );
 };
 

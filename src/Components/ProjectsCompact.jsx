@@ -1,30 +1,16 @@
-import { Box, Image, Text } from "@chakra-ui/react";
-import React from "react";
-
 const ProjectsCompact = ({ title, image, website }) => {
   return (
-    <Box
+    <div
       onClick={() => (website ? window.open(website) : null)}
-      display={"flex"}
-      flexDirection={"column"}
-      align="center"
-      // boxShadow="lg"
-      backdropFilter="auto"
-      backdropContrast="90%"
-      borderRadius={"15"}
-      m="3"
-      p={"3"}
-      alignItems="center"
+      className="flex flex-col items-center backdrop-contrast-[.9] rounded-2xl m-3 p-3 cursor-pointer"
     >
-      <Image
-        className="transform transition duration-300 hover:scale-95"
-        // borderRadius={"40"}
-        maxW="150"
-        w="150"
+      <img
+        className="max-w-[150px] w-[150px] transition duration-300 hover:scale-95"
         src={image}
-      ></Image>
-      <Text mt="5">{title}</Text>
-    </Box>
+        alt={title}
+      />
+      <p className="mt-5">{title}</p>
+    </div>
   );
 };
 

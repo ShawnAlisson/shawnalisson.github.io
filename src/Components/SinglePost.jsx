@@ -1,48 +1,22 @@
-import { Box, IconButton, Image, List, ListItem, Text } from "@chakra-ui/react";
-import React from "react";
-
 const SinglePost = ({ title, content, icon, changelog, date }) => {
   return (
-    <Box
-      boxShadow="lg"
-      display={"flex"}
-      flexDir="column"
-      align="start"
-      backdropFilter="auto"
-      backdropContrast="90%"
-      borderRadius={"15"}
-      my="4"
-    >
-      <Box display={"flex"} mx="2" my="2">
-        <Image mx="2" h="45" borderRadius={"25"} src={icon}></Image>
-        <Text fontSize={"3xl"}>{title}</Text>
-      </Box>
-
-      <Text mx="8" my="2">
-        {content}
-      </Text>
-      <Box mx="10">
-        <ul>
+    <div className="shadow-lg flex flex-col items-start backdrop-contrast-[.9] rounded-2xl my-4">
+      <div className="flex mx-2 my-2">
+        <img className="mx-2 h-[45px] rounded-full" src={icon} alt={title} />
+        <p className="text-3xl">{title}</p>
+      </div>
+      <p className="mx-8 my-2">{content}</p>
+      <div className="mx-10">
+        <ul className="list-disc list-inside">
           {changelog?.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
-      </Box>
-
-      <Box
-        display={"flex"}
-        flexDir={"row"}
-        mx="2"
-        my="2"
-        backdropFilter="auto"
-        backdropContrast="90%"
-        borderRadius={"25"}
-      >
-        <Text fontSize={"14"} mx="4">
-          {date}
-        </Text>
-      </Box>
-    </Box>
+      </div>
+      <div className="flex mx-2 my-2 backdrop-contrast-[.9] rounded-full">
+        <p className="text-sm mx-4">{date}</p>
+      </div>
+    </div>
   );
 };
 
