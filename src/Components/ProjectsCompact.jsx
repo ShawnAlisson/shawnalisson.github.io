@@ -1,16 +1,22 @@
-const ProjectsCompact = ({ title, image, website }) => {
+const ProjectsCompact = ({ title, image, link }) => {
   return (
-    <div
-      onClick={() => (website ? window.open(website) : null)}
-      className="flex flex-col items-center backdrop-contrast-[.9] rounded-2xl m-3 p-3 cursor-pointer"
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="flex flex-col items-center rounded-2xl m-2 p-4 group hover:-translate-y-1 transition-all duration-300"
     >
-      <img
-        className="max-w-[150px] w-[150px] transition duration-300 hover:scale-95"
-        src={image}
-        alt={title}
-      />
-      <p className="mt-5">{title}</p>
-    </div>
+      <div className="rounded-2xl overflow-hidden transition-shadow duration-300">
+        <img
+          className="w-30 h-30 object-contain transition duration-300 group-hover:scale-105"
+          src={image}
+          alt={title}
+        />
+      </div>
+      <p className="mt-3 text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
+        {title}
+      </p>
+    </a>
   );
 };
 

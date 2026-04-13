@@ -1,21 +1,27 @@
 const SinglePost = ({ title, content, icon, changelog, date }) => {
   return (
-    <div className="shadow-lg flex flex-col items-start backdrop-contrast-[.9] rounded-2xl my-4">
-      <div className="flex mx-2 my-2">
-        <img className="mx-2 h-[45px] rounded-full" src={icon} alt={title} />
-        <p className="text-3xl">{title}</p>
+    <div className="backdrop-blur-2xl bg-white/50 dark:bg-gray-900/50 border border-white/30 dark:border-gray-700/30 shadow-lg flex flex-col items-start rounded-2xl my-4 p-5">
+      <div className="flex items-center gap-3 mb-3">
+        <img className="h-10 w-10 rounded-full shadow-md" src={icon} alt={title} />
+        <p className="text-2xl font-semibold">{title}</p>
       </div>
-      <p className="mx-8 my-2">{content}</p>
-      <div className="mx-10">
-        <ul className="list-disc list-inside">
-          {changelog?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>
-      <div className="flex mx-2 my-2 backdrop-contrast-[.9] rounded-full">
-        <p className="text-sm mx-4">{date}</p>
-      </div>
+      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+        {content}
+      </p>
+      {changelog && changelog.length > 0 && (
+        <div className="ml-2 mb-3">
+          <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 space-y-0.5">
+            {changelog.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {date && (
+        <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+          {date}
+        </p>
+      )}
     </div>
   );
 };

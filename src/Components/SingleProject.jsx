@@ -1,25 +1,23 @@
 const SingleProject = ({ title, content, image, website, github }) => {
   return (
-    <div className="flex flex-col md:flex-row shadow-lg backdrop-contrast-[.9] rounded-3xl p-5 my-5 transition duration-300 hover:scale-[0.97] items-center md:items-start">
-      <img
-        className="h-[150px] rounded-3xl"
-        src={image}
-        alt={title}
-      />
-      <div className="mx-5 flex flex-col justify-center md:justify-start text-center md:text-start">
-        <p className="text-2xl">{title}</p>
-        <p>{content}</p>
-        <div className="flex justify-center md:justify-start items-center">
+    <div className="flex flex-col md:flex-row backdrop-blur-2xl bg-white/50 dark:bg-gray-900/50 border border-white/30 dark:border-gray-700/30 shadow-lg hover:shadow-xl rounded-3xl p-5 my-5 transition-all duration-300 hover:-translate-y-1 items-center md:items-start">
+      <img className="h-32 rounded-2xl " src={image} alt={title} />
+      <div className="mx-5 mt-4 md:mt-0 flex flex-col justify-center md:justify-start text-center md:text-start">
+        <p className="text-xl font-semibold">{title}</p>
+        <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          {content}
+        </p>
+        <div className="flex justify-center md:justify-start items-center mt-3 gap-1">
           {github && (
             <a
               aria-label="github"
               href={github}
               target="_blank"
               rel="noreferrer"
-              className="m-2 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 hover:scale-95"
+              className="p-2 rounded-xl hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 hover:-translate-y-0.5"
             >
               <svg
-                className="w-6 h-6 fill-gray-600 dark:fill-white"
+                className="w-5 h-5 fill-gray-600 dark:fill-gray-300"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -33,10 +31,10 @@ const SingleProject = ({ title, content, image, website, github }) => {
               href={website}
               target="_blank"
               rel="noreferrer"
-              className="mt-1 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 hover:scale-95"
+              className="p-2 rounded-xl hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 hover:-translate-y-0.5"
             >
               <svg
-                className="w-7 h-7 fill-gray-600 dark:fill-white"
+                className="w-5 h-5 fill-gray-600 dark:fill-gray-300"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >

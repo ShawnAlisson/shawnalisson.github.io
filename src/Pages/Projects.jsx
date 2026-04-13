@@ -6,23 +6,23 @@ import Footer from "../Components/Footer";
 const Projects = () => {
   const { projects } = project;
   return (
-    <div className="flex flex-col items-center m-5 p-5">
-      <NavBar />
-      <div className="max-w-[1000px]">
-        {projects.map((project, i) => (
-          <SingleProject
-            key={i}
-            title={project.title}
-            content={project.content}
-            image={project.image}
-            website={project.website}
-            github={project.github}
-          />
-        ))}
+    <div className="min-h-screen flex flex-col">
+      <div className="flex-1 flex flex-col items-center px-5 pt-6">
+        <NavBar />
+        <div className="max-w-225 w-full animate-fade-in-up">
+          {projects.map((project, i) => (
+            <SingleProject
+              key={i}
+              title={project.title}
+              content={project.content}
+              image={project.image}
+              website={project.website}
+              github={project.github}
+            />
+          ))}
+        </div>
       </div>
-      <div className="flex">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };

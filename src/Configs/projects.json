@@ -1,8 +1,9 @@
 {
     "projects": [
+         
          {
             "title": "Bowora",
-            "content": "Get funded. Get acquired. Get seen.",
+            "content": "List your startup free. Earn stars, rank higher, and connect with verified investors or buyers. Raise capital or sell your company on Bowora.",
             "date": "",
             "website" : "https://bowora.com",
             "image" : "/assets/bowora.png"
@@ -16,15 +17,15 @@
             "image" : "/assets/chayi.png"
 
         },
-        {
-            "title": "Challenjeu",
-            "content": "Social platform that lets you create and share challenges with others. Set and achieve your goals with the support of a community, follow each other's progress, and communicate to exchange ideas and stay motivated.",
+         {
+            "title": "AI Studio",
+            "content": "Build and ship AI products faster with one production-ready API stack.",
             "date": "",
-            "website" : "https://challenjeu.com",
-            "image" : "/assets/challenjeu.png"
+            "website" : "https://studio.pahlavan.co.uk/",
+            "image" : "/assets/studio.png"
 
         },
-        {
+         {
             "title": "MonMate",
             "content": "Manage MongoDB with MonMate! Create, edit, and delete connections, collections, and documents. Enjoy built-in editor, sorting, and filtering.",
             "date": "",
@@ -33,6 +34,15 @@
             "image" : "/assets/monmate.png"
 
         },
+        {
+            "title": "Challenjeu",
+            "content": "Social platform that lets you create and share challenges with others. Set and achieve your goals with the support of a community, follow each other's progress, and communicate to exchange ideas and stay motivated.",
+            "date": "",
+            "website" : "https://challenjeu.com",
+            "image" : "/assets/challenjeu.png"
+
+        },
+       
         {
             "title": "MonSleep",
             "content": "MonSleep is your personal sleep companion, offering insightful scores based on your sleep quality. Using data collected by your Apple Watch and the Health app, MonSleep analyzes the different stages of your sleep—REM, core, and deep—and provides you with an easy-to-understand sleep score.",

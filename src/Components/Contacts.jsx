@@ -4,17 +4,20 @@ const Contacts = () => {
   const { about } = config;
   const { socialMedia } = about;
 
+  const linkClass =
+    "inline-flex items-center justify-center m-1.5 p-2.5 rounded-xl bg-white/40 dark:bg-gray-800/40 border border-white/30 dark:border-gray-700/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200";
+
   return (
-    <div>
+    <div className="flex justify-center gap-1">
       <a
         aria-label="github"
         href={socialMedia.github}
         target="_blank"
         rel="noreferrer"
-        className="inline-block m-2 p-2 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 hover:scale-95"
+        className={linkClass}
       >
         <svg
-          className="w-8 h-8 fill-gray-600 dark:fill-white"
+          className="w-6 h-6 fill-gray-700 dark:fill-gray-200"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -26,10 +29,10 @@ const Contacts = () => {
         href={socialMedia.linkedin}
         target="_blank"
         rel="noreferrer"
-        className="inline-block m-2 p-2 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 hover:scale-95"
+        className={linkClass}
       >
         <svg
-          className="w-8 h-8 fill-gray-600 dark:fill-white"
+          className="w-6 h-6 fill-gray-700 dark:fill-gray-200"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -41,10 +44,10 @@ const Contacts = () => {
         href={`mailto:${socialMedia.email}`}
         target="_blank"
         rel="noreferrer"
-        className="inline-block m-2 p-2 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 hover:scale-95"
+        className={linkClass}
       >
         <svg
-          className="w-8 h-8 fill-gray-600 dark:fill-white"
+          className="w-6 h-6 fill-gray-700 dark:fill-gray-200"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
